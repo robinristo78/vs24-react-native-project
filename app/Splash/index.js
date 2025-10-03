@@ -3,7 +3,7 @@ import { Text, View, Image, Pressable } from "react-native";
 import { useRouter } from "expo-router";
 
 import styles from "./styles";
-import Button from "../../components/Button";
+import Button from "@/components/Button";
 
 const Splash = () => {
   const router = useRouter();

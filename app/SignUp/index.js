@@ -3,10 +3,11 @@ import { View, Text } from "react-native";
 import { useRouter } from "expo-router";
 
 import styles from "./styles";
-import AuthHeader from "../../components/AuthHeader";
-import Input from "../../components/Input";
-import Checkbox from "../../components/Checkbox";
+import AuthHeader from "@/components/AuthHeader";
+import Input from "@/components/Input";
+import Checkbox from "@/components/Checkbox";
 import Button from "@/components/Button";
+import Separator from "@/components/Separator";
 
 const SignUp = () => {
     const router = useRouter();
@@ -23,6 +24,7 @@ const SignUp = () => {
                 <Text style={styles.agreeText}>I agree with <Text style={styles.agreeTextBold}>Terms</Text> & <Text style={styles.agreeTextBold}>Privacy</Text></Text>
             </View>
             <Button style={styles.button} title="Sign Up" />
+            <Separator text="Or sign up with" />
         </View>
     )
 }
