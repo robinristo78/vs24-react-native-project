@@ -3,9 +3,9 @@ import colors from "../../utils/colors";
 
 export default StyleSheet.create({
     container: {
-        padding: 24,
         flexDirection: "row",
         alignItems: "center",
+        marginBottom: 54,
     },
     image: {
         width: 18,
