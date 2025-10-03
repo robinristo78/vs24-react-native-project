@@ -5,4 +5,15 @@ export default StyleSheet.create({
     container: {
         padding: 24,
     },
+    agreeRow: {
+        flexDirection: 'row',
+        alignItems: 'center',
+    },
+    agreeText: {
+        color: colors.blue,
+        marginHorizontal: 14,
+    },
+    agreeTextBold: {
+        fontWeight: '500',
+    },
 });
