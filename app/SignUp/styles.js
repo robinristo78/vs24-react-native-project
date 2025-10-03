@@ -16,4 +16,7 @@ export default StyleSheet.create({
     agreeTextBold: {
         fontWeight: '500',
     },
+    button: {
+        marginVertical: 20,
+    },
 });

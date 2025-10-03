@@ -1,9 +1,13 @@
 import React from "react";
 import { Text, View, Image, Pressable } from "react-native";
+import { useRouter } from "expo-router";
+
 import styles from "./styles";
 import Button from "../../components/Button";
 
 const Splash = () => {
+  const router = useRouter();
+
   return (
     <View style={styles.container}>
         <Image resizeMode="contain" style={styles.image} source={require('../../assets/images/100501.png')} />
@@ -14,7 +18,7 @@ const Splash = () => {
           <Text style={styles.title}>Here!</Text>
         </View>
         
-        <Button title="Sign Up"/>
+        <Button title="Sign Up" onPress={() => router.push('./SignUp')}/>
 
         <Pressable>
           <Text style={styles.footerText}>Sign In</Text>
