@@ -18,13 +18,18 @@ const SignUp = () => {
     return (
         <SafeAreaView>
             <View style={styles.container}>
-                <AuthHeader title="Sign In" onBackPress={() => router.push('./Splash')}/>
+                <AuthHeader title="Sign Up" onBackPress={() => router.push('./Splash')}/>
+                <Input label="Name" placeholder="John Doe" />
                 <Input label="Email" placeholder="example@example.com" />
                 <Input isPassword label="Password" placeholder="******" />
-                <Button style={styles.button} title="Sign In" />
-                <Separator text="Or sign in with" />
+                <View style={styles.agreeRow}>
+                    <Checkbox checked={checked} onCheck={setChecked} />
+                    <Text style={styles.agreeText}>I agree with <Text style={styles.agreeTextBold}>Terms</Text> & <Text style={styles.agreeTextBold}>Privacy</Text></Text>
+                </View>
+                <Button style={styles.button} title="Sign Up" onPress={() => router.push('./SignIn')} />
+                <Separator text="Or sign up with" />
                 <GoogleLogin />
-            <Text style={styles.footer}>Don't have an account? <Pressable style={styles.footerLink} onPress={() => router.push('./SignUp')}>Sign Up</Pressable> </Text>
+                <Text style={styles.footer}>Already have an account? <Pressable style={styles.footerLink} onPress={() => router.push('./SignIn')}>Sign In</Pressable> </Text>
             </View>
         </SafeAreaView>
     )

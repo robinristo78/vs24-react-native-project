@@ -1,19 +1,21 @@
-import React from "react";
-import { View } from "react-native";
+// app/index.tsx
+// Ei renderdata Splash otse, jäta tühjaks või tee redirect
+import { useEffect } from "react";
+import { useRouter } from "expo-router";
 
-import Splash from "./Splash";
+export default function App() {
+  const router = useRouter();
 
-const WEB_CLIENT_ID = "1070405487617-tkdjree8p845csfhergldcd0426mvrkd.apps.googleusercontent.com";
-const IOS_CLIENT_ID = "1070405487617-i833b5a9lr54uqa3dv4tugbte7c7k7rp.apps.googleusercontent.com";
+  useEffect(() => {
+    // TODO: kontrolli autentimist
+    const isSignedIn = false; // testimiseks toggle true/false
 
-export const options = {
-  headerShown: false, // hides the top header
-};
+    if (isSignedIn) {
+      router.replace("./tabs/Home"); // viib Tabs layouti (Home)
+    } else {
+      router.replace("./auth/Splash"); // auth flow
+    }
+  }, []);
 
-const App = () => {
-  return (
-    <Splash />
-  );
+  return null; // ei renderda midagi, ainult redirect
 }
-
-export default App;

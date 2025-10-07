@@ -16,7 +16,7 @@ const Splash = () => {
   return (
     <SafeAreaView>
       <View style={styles.container}>
-          <Image resizeMode="contain" style={styles.image} source={require('../../assets/images/100501.png')} />
+          <Image resizeMode="contain" style={styles.image} source={require('@/assets/images/100501.png')} />
 
           <View style={styles.titleContainer}>
             <Text style={styles.title}>You'll Find</Text>
