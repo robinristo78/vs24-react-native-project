@@ -20,7 +20,7 @@ const Splash = () => {
         
         <Button title="Sign Up" onPress={() => router.push('./SignUp')}/>
 
-        <Pressable>
+        <Pressable onPress={() => router.push('./SignIn')}>
           <Text style={styles.footerText}>Sign In</Text>
         </Pressable>
 

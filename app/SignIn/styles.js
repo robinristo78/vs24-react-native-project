@@ -14,12 +14,12 @@ export default StyleSheet.create({
         marginHorizontal: 14,
     },
     agreeTextBold: {
-        fontWeight: '700',
+        fontWeight: '500',
     },
     button: {
         marginVertical: 20,
     },
-        footer: {
+    footer: {
         textAlign: 'center',
         marginTop: 20,
         color: colors.blue,
