@@ -28,6 +28,9 @@ const styles = StyleSheet.create({
         color: colors.orange,
         textDecorationLine: "underline",
     },
+    footerContainer: {
+        width: "100%",
+    },
     footerText: {
         paddingHorizontal: 8,
         color: colors.blue,
@@ -35,6 +38,7 @@ const styles = StyleSheet.create({
         fontSize: 16,
         fontWeight: "bold",
         marginTop: 30,
+        width: "100%",
     },
     
 });

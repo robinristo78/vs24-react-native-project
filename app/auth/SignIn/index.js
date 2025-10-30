@@ -24,7 +24,7 @@ const SignUp = () => {
                 <Button style={styles.button} title="Sign In" onPress={() => router.push('./Home')} />
                 <Separator text="Or sign in with" />
                 <GoogleLogin />
-            <Text style={styles.footer}>Don't have an account? <Pressable style={styles.footerLink} onPress={() => router.push('./SignUp')}>Sign Up</Pressable> </Text>
+            <Text style={styles.footer}>Don't have an account? <Text style={styles.footerLink} onPress={() => router.push('./SignUp')}>Sign Up</Text> </Text>
             </View>
         </SafeAreaView>
     )

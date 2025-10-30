@@ -29,7 +29,7 @@ const SignUp = () => {
                 <Button style={styles.button} title="Sign Up" onPress={() => router.push('./SignIn')} />
                 <Separator text="Or sign up with" />
                 <GoogleLogin />
-                <Text style={styles.footer}>Already have an account? <Pressable style={styles.footerLink} onPress={() => router.push('./SignIn')}>Sign In</Pressable> </Text>
+                <Text style={styles.footer}>Already have an account? <Text style={styles.footerLink} onPress={() => router.push('./SignIn')}>Sign In</Text> </Text>
             </View>
         </SafeAreaView>
     )

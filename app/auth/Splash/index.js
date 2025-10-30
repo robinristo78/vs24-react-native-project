@@ -26,8 +26,8 @@ const Splash = () => {
           
           <Button title="Sign Up" onPress={() => router.push('./SignUp')}/>
 
-          <Pressable onPress={() => router.push('./SignIn')}>
-            <Text style={styles.footerText}>Sign In</Text>
+          <Pressable style={styles.footerContainer} onPress={() => router.push('./SignIn')}>
+            <Text style={styles.footerText} >Sign In</Text>
           </Pressable>
 
           {/* <Button title="Sign In" /> */}
